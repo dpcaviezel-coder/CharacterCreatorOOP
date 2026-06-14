@@ -1,17 +1,17 @@
 ﻿namespace CharacterCreatorOOP
 {
-    public class Assassin : Combat, IStatDistribution
+    public class Assassin : BaseCharacter
     {
-        public CharacterClass Identity { get; set; } = CharacterClass.Assassin;
+        public Assassin()
+        {
+            Identity = CharacterClass.Assassin;
 
-        public string PlayerCharacter { get; set; } = "Unnamed Assassin";
-
-        public int Charisma { get; set; }
-        public int Constitution { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Strength { get; set; }
-        public int Wisdom { get; set; }
+            Strength = 8;
+            Dexterity = 10;
+            Intelligence = 6;
+            Constitution = 5;
+            Wisdom = 4;
+            Charisma = 3;
+        }
     }
-} 
-
+}

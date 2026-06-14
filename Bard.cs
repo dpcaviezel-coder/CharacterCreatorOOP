@@ -1,17 +1,18 @@
 ﻿namespace CharacterCreatorOOP
 {
-    public class Bard : Combat, IStatDistribution
+    public class Bard : BaseCharacter
     {
-        public CharacterClass Identity { get; set; } = CharacterClass.Bard;
+        public Bard()
+        {
+            Identity = CharacterClass.Bard;
 
-        public string PlayerCharacter { get; set; } = "Unnamed Bard";
-
-        public int Charisma { get; set; }
-        public int Constitution { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Strength { get; set; }
-        public int Wisdom { get; set; }
+            Strength = 5;
+            Dexterity = 5;
+            Intelligence = 5;
+            Constitution = 5;
+            Wisdom = 5;
+            Charisma = 11;
+        }
     }
-} 
+}
 
