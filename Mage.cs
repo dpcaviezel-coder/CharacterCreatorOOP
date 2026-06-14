@@ -1,16 +1,18 @@
 ﻿namespace CharacterCreatorOOP
 {
-    public class Mage : Combat, IStatDistribution
+    public class Mage: BaseCharacter
     {
-        public CharacterClass Identity { get; set; } = CharacterClass.Mage;
+        public Mage()
+        {
+            Identity = CharacterClass.Mage;
 
-        public string PlayerCharacter { get; set; } = "Unnamed Mage";
-        public int Charisma { get; set; }
-        public int Constitution { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Strength { get; set; }
-        public int Wisdom { get; set; }
+            Strength = 1;
+            Dexterity = 1;
+            Intelligence = 12;
+            Constitution = 5;
+            Wisdom = 12;
+            Charisma = 5;
+        }
     }
-} 
+}
 

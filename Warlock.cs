@@ -1,16 +1,19 @@
 ﻿namespace CharacterCreatorOOP
 {
-    public class Warlock : Combat, IStatDistribution
+    public class Warlock : BaseCharacter
     {
-        public CharacterClass Identity { get; set; } = CharacterClass.Warlock;
+        public Warlock()
+        {
+            Identity = CharacterClass.Warlock;
 
-        public string PlayerCharacter { get; set; } = "Unnamed Warlock";
-        public int Charisma { get; set; }
-        public int Constitution { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Strength { get; set; }
-        public int Wisdom { get; set; }
+            Strength = 1;
+            Dexterity = 1;
+            Intelligence = 9;
+            Constitution = 8;
+            Wisdom = 12;
+            Charisma = 5;
+        }
     }
-} 
+}
+
 

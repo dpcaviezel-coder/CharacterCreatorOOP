@@ -1,16 +1,19 @@
 ﻿namespace CharacterCreatorOOP
 {
-    public class Paladin : Combat, IStatDistribution
+    public class Paladin : BaseCharacter
     {
-        public CharacterClass Identity { get; set; } = CharacterClass.Paladin;
+        public Paladin()
+        {
+            Identity = CharacterClass.Paladin;
 
-        public string PlayerCharacter { get; set; } = "Unnamed Paladin";
-        public int Charisma { get; set; }
-        public int Constitution { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Strength { get; set; }
-        public int Wisdom { get; set; }
+            Strength = 9;
+            Dexterity = 0;
+            Intelligence = 3;
+            Constitution = 10;
+            Wisdom = 4;
+            Charisma = 10;
+        }
     }
-} 
+}
+
 
